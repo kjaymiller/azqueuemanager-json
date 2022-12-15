@@ -23,7 +23,9 @@
 			"extensions": [
 				"ms-python.python",
 				"ms-vscode.vscode-node-azure-pack",
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"github.github-copilot",
+				"github.github-copilot-labs"
 			]
 		}
 	},

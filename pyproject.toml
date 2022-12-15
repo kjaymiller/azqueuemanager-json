@@ -4,15 +4,14 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "azqueuemanager-<extension>"
-description = "My extension for AZQueueManager"
+name = "azqueuemanager-json"
+description = "JSON for AZQueueManager"
 dependencies = ['azqueuemanager']
 readme = "README.md"
 license = { text = "MIT"}
 classifiers = [
-    "AZQueueManager :: Extension",
     "Programming Language :: Python :: 3",
 ]
-keywords = ["azqueuemanager", "extension", "myextension"]
+keywords = ["azqueuemanager", "extension", "json"]
 requires-python = ">=3.10"
 version = "0.0.1"
