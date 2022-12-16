@@ -1,6 +1,7 @@
 from azqueuemanager.extension import ExtensionBaseClass, _parser_filter 
 import json
 from pathlib import Path
+import logging
 
 # Replease MYEXTENSION with the name of your extension
 
@@ -23,7 +24,7 @@ class JSONTransform(ExtensionBaseClass):
         # The REQUIRED_ARG is likely something that can determine how to ingest the data.
         # You can rename this to whatever you want and have as many as needed
         if not any([json_in_file, json_data]) or all([json_in_file, json_data]):
-            raise ValueError("You must provide EITHER json_file OR json_data.")
+            logging.warning("Neither json_in_file or json_data were provided. You will not be able to use as an input_transformer.") 
 
         self.json_in_file = json_in_file
         self.json_out_file = json_out_file
